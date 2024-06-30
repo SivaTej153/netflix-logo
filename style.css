@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+.netflix {
+    position: relative;
+    height: 520px;
+    width: 360px;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.netflix:before {
+    position: absolute;
+    background: black;
+    content: "";
+    left: 0;
+    bottom: -100px;
+    height: 120px;
+    width: 100%;
+    z-index: 2;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    transform: scaleX(2);
+}
+
+.netflix span {
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    top: 0;
+    background: #b00612;
+}
+
+.netflix span:nth-child(1) {
+    left: 0;
+}
+
+.netflix span:nth-child(2) {
+    transform-origin: top left;
+    transform: skewX(25deg);
+    z-index: 1;
+    box-shadow: 0 0 50px black;
+}
+
+.netflix span:nth-child(3) {
+    right: 0;
+
+}
+
+h3 {
+    position: absolute;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 48px;
+    color: white;
+    text-align: center;
+}
+
